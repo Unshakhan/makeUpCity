@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+.montez-regular {
+  font-family: "Montez", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo{
+    font-size: 50px;
+}
+.pinkgradient{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+.container{
+    background-color: #d53369;
+}
+
+.card-box:hover{
+    border: 2px solid  rgb(247, 167, 193);
+    box-shadow: palevioletred 0px 3px 8px;
+};
+ img{
+    height: 70%;
+    /* width: 100%; */
+    object-fit: contain; /* sab images equal size */
+    /* border-radius: 10px; */
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;     /* icons ke darmiyan space */
+    font-size: 20px;
+    padding: 10px 0;
+    color: #d53369;
+    /* align-items: flex-end; */
+}
+.icons:hover{
+     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+     color: white;
+     cursor: pointer;
+}
+.item-name:hover{
+      color: #d53369;
+     cursor: pointer;
+}
+/* .card-box{ */
+    /* border: 1px solid rgba(70, 68, 68, 0.507); */
+     /* border: 2px solid; 
+  border-image: linear-gradient(90deg, #d53369 0%, #daae51 100%) 1;
+    border-radius: 15px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+} */
+.card-box {
+  position: relative;
+  border-radius: 15px;
+  padding: 20px;
+  background: #fff;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+/* Gradient Border */
+.card-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* border width */
+  border-radius: inherit;
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+
+.card-body{
+    flex: 1; /* empty space fill karega and icons ko bottom push karega */
+}
+/* ========================================================== */
+/* -------------------------------searchbtn */
+.searchbtn{
+    border: 2px solid #d64267;
+    color: #d53369;
+}
+.searchbtn:hover{
+    background-color: #d53369;
+    border: 2px solid #d64267;
+color: white;
+}
+.heading{
+    font-size: 60px;
+    color: #d53369;
+}
