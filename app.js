@@ -388,19 +388,19 @@ babyCare: {
 
 
 };
-var categoryimgs = {
-  skinCare: "",
-  haircare: "",
-  makeup:"",
-  nailCare: "https://www.beautycoursesonline.com.au/wp-content/uploads/2024/12/shutterstock_2198190745-1.jpg",
-  babyCare: ""
-};
+// var categoryimgs = {
+//   skinCare: "",
+//   haircare: "",
+//   makeup:"",
+//   nailCare: "https://www.beautycoursesonline.com.au/wp-content/uploads/2024/12/shutterstock_2198190745-1.jpg",
+//   babyCare: ""
+// };
   var Category=document.getElementById("Category")
  for(care in beautyCares){// skincare,nailcare etc
    Category.innerHTML+=`<option value="${care}">${care.toUpperCase()}</option>
                       `  
           var mainContainer = document.getElementById("main")          
-        mainContainer.innerHTML += `<div class="heading text-center mt-5 col-12 bree-serif-regular">${care.toUpperCase()}</div>`;   
+        mainContainer.innerHTML += `<div class="heading text-center mt-5 col-12 bree-serif-regular" >${care.toUpperCase()}</div>`;   
   for(brand in beautyCares[care]){//st london,dove etc
     // console.log(brand);
      for(product in beautyCares[care][brand]){//moisurisers , serums
